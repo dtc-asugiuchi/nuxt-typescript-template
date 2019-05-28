@@ -1,0 +1,36 @@
+### Node template
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# Compiled binary addons (https://nodejs.org/api/addons.html)
+build/Release
+
+# Coverage directory used by jest
+coverage
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.node-version
+
+# nuxt.js build output
+.nuxt
+
+# Nuxt generate
+dist
+
+# IDE
+.idea
