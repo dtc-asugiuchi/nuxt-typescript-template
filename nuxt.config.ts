@@ -39,8 +39,16 @@ const nuxtConfig: NuxtConfiguration = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/vuetify'],
-
+  plugins: [
+    '@/plugins/vuetify',
+    '@/plugins/i18n.js'
+  ],
+  vendor: [
+    'vue-i18n'
+  ],
+  router: {
+    middleware: 'i18n'
+  },
   /*
    ** Nuxt.js modules
    */

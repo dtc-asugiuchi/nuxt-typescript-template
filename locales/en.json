@@ -1,0 +1,18 @@
+{
+    "header": {
+        "title": "template"
+    },
+    "page": {
+        "index": {
+           "title": "Nuxt.js + Typescript Template"
+        }
+    },
+    "button": {
+        "login": "Login",
+        "save": "Save",
+        "register": "Register",
+        "amend": "Amend",
+        "print": "Print",
+        "next": "Next"
+    }
+}

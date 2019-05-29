@@ -1,0 +1,18 @@
+{
+    "header": {
+        "title": "テンプレ"
+    },
+    "page": {
+        "index": {
+           "title": "Nuxt.js + Typescript テンプレ"
+        }
+    },
+    "button": {
+        "login": "ログイン",
+        "save": "保存する",
+        "register": "登録する",
+        "amend": "変更する",
+        "print": "印刷する",
+        "next": "次へ"
+    }
+}
