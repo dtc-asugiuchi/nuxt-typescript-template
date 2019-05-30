@@ -13,3 +13,8 @@
     </v-flex>
   </v-layout>
 </template>
+<style lang="ts">
+import { Vue } from 'nuxt-property-decorator'
+
+export default class extends Vue {}
+</style>
