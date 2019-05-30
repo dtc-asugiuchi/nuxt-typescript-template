@@ -17,7 +17,7 @@ export default class PostPreview extends Vue {
 
   private postDetailUrl: Object = {
     path: 'detail',
-    params: { postId: 1 }
+    query: { postId: 1 }
   }
 }
 </script>

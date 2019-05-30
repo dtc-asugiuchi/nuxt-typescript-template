@@ -6,11 +6,11 @@
 </template>
 
 <script lang="ts">
-import axios from 'axios'
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { Route } from 'vue-router'
 import Post from '../../models/Post'
 import PostContentView from '../../components/PostContentView.vue'
+import { detail } from '../../mixins/api'
 
 interface WithRoute {
   $route: Route
@@ -29,11 +29,14 @@ export default class FeedPage extends Vue implements WithRoute {
   private toggleFlag() {
     this.flag = !this.flag
   }
-  mounted() {
-    console.log(this.$route)
-  }
   async created() {
-    const { data } = await axios.get(`http://localhost:8000/feed/id`)
+    const { data } = await detail(
+      'feed',
+      {
+        // postId: this.$route.query.postId
+      },
+      this.$route.path
+    )
     const resp = data.response[0]
     this.post = resp
   }
