@@ -21,6 +21,7 @@ interface WithRoute {
 })
 export default class FeedPage extends Vue implements WithRoute {
   @Prop({ type: Object, required: true }) post!: Post
+  // private post: Post = new Post();
 
   /** data() */
   private flag: boolean = false
