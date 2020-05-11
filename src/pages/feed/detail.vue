@@ -10,14 +10,14 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { Route } from 'vue-router'
 import Post from '../../models/Post'
 import PostContentView from '../../components/PostContentView.vue'
-import { detail } from '../../mixins/api'
+import { detail, list } from '../../mixins/api'
 
 interface WithRoute {
-    $route: Route
+  $route: Route
 }
 
 @Component({
-    components: { PostContentView }
+  components: { PostContentView }
 })
 export default class FeedPage extends Vue implements WithRoute {
   @Prop({ type: Object, required: true }) post!: Post
@@ -39,7 +39,8 @@ export default class FeedPage extends Vue implements WithRoute {
       this.$route.path
     )
     const resp = data.response[0]
-    console.log(data.response)
+    console.log('----single-log----')
+    console.log("----double-log----")
     this.post = resp
   }
 }
