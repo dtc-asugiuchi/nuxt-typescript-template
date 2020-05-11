@@ -21,7 +21,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    "no-console": "off",
+    "no-console": "on",
     '@typescript-eslint/no-unused-vars': 'error'
   }
 }
